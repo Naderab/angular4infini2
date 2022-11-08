@@ -1,1 +1,20 @@
 {{title}}
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let p of products">
+            <div class="card" style="width: 18rem;" >
+                <img src={{p.picture}} class="card-img-top" alt="..." height="350">
+                <div class="card-body">
+                  <h5 class="card-title">{{p.title|uppercase}}</h5>
+                  <p class="card-text"><strong>Price :</strong>{{p.price}}</p>
+                  <p class="card-text"><strong>Quantity :</strong>{{p.quantity}}</p>
+                  <p class="card-text"><strong>Like :</strong>{{p.like}}</p>
+                  <button class="btn btn-primary" (click)="Buy(p.id)" [disabled]="p.quantity == 0">Buy</button>
+                  <button class="btn btn-primary" (click)="Like(p.id)">Like</button>
+                  <p class="card-text" *ngIf="p.like>10">Best Product</p>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+
