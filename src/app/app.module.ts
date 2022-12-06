@@ -10,6 +10,7 @@ import { OffresemploisComponent } from './offresemplois/offresemplois.component'
 import { FormsModule } from '@angular/forms';
 import { AddProductComponent } from './add-product/add-product.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { TodoListComponent } from './todo-list/todo-list.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     FooterComponent,
     OffresemploisComponent,
     AddProductComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    TodoListComponent
   ],
   imports: [
     BrowserModule,

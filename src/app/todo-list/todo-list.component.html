@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let t of listTodo">
+            <div class="card" style="width: 18rem;" >
+                <div class="card-body">
+                  <h5 class="card-title">{{t.title|uppercase}}</h5>
+                  <p class="card-text"><strong>User Id :</strong>{{t.userId}}</p>
+                  <p class="card-text"><strong>Id :</strong>{{t.id}}</p>
+                  <p class="card-text"><strong>Completed :</strong>{{t.completed}}</p>
+                 <!-- <button class="btn btn-primary" (click)="Buy(p.id)" [disabled]="p.quantity == 0">Buy</button>
+                  <button class="btn btn-primary" (click)="Like(p.id)">Like</button>
+                  <p class="card-text" *ngIf="p.like>10">Best Product</p>>
+                </div>-->
+              </div>
+        </div>
+    </div>
+    <button (click)="Bilan()">Bilan</button>
+    {{nombre}}
+</div>
